@@ -36,3 +36,13 @@ function personMaker() {
 }
 const myPerson = personMaker();
 console.log(myPerson.fullName());
+
+
+function keyDeleter(obj){
+    delete obj.foo;
+    delete obj.bar;
+    return obj;
+}
+
+keyDeleter(newObj);
+console.log(newObj);
