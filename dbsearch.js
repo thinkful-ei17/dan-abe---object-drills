@@ -12,11 +12,23 @@ const HEROES = [
 
 function findOne(arr, query) {
 /*loop through each object within the array
+
 for each object:    
     - make sure each key in the query matches the object
     - if it does, return it
     - if not, keep looping
 
     */
+
+  for (let hero of arr){
+    let found = false;  
+    for (let key in query){
+      if (hero[key] === query[key])
+        found = true;
+      else (found = false);  
+  
+    }
+    return hero;
+  }
 }
 findOne(HEROES, { id: 5, squad: 'Justice League' });
