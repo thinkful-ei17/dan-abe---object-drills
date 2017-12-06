@@ -31,10 +31,28 @@ const studentData = [
 ];
 
 function enrollInSummerSchool(students){
-    for (let i = 0; i < students.length; i++){
-        students[i].status = 'In Summer School';
-    }
-    return students;
+  for (let i = 0; i < students.length; i++){
+    students[i].status = 'In Summer School';
+  }
+  return students;
 }
 
 console.log(enrollInSummerSchool(studentData));
+
+
+const scratchData = [
+  { id: 22, foo: 'bar' },
+  { id: 28, foo: 'bizz' },
+  { id: 19, foo: 'bazz' },
+];
+  
+function findById(items, idNum) {
+  let foundId;
+  for (let i=0; i < items.length; i++) {
+    if (items[i].id === idNum) {
+      foundId = items[i];
+    }
+  }
+  return foundId;
+} 
+console.log(findById(scratchData, 28));  
