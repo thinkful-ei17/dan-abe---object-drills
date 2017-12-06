@@ -28,7 +28,7 @@ for each object:
       else (found = false);  
   
     }
-    return hero;
+    return found ? hero : null;
   }
 }
 findOne(HEROES, { id: 5, squad: 'Justice League' });
